@@ -65,28 +65,19 @@
     </div>
     
     <div class="sector2">
-            <form class="left">
-                <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-                </div>
-                <div>
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
-                </div>
-                <div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Ingrese su email" required>
-                </div>
-                <div>
-                    <button>
-                        <input type="submit" value="Enviar">
-                    </button>
-                    <button>
-                        <input type="reset" value="Borrar Formulario">
-                    </button>
-                </div>
-            </form>
+      <form>
+        <div class="input-group">
+          <span class="input-group-text">Apellido y Nombre</span>
+          <input type="text" aria-label="First name" class="form-control">
+          <input type="text" aria-label="Last name" class="form-control">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"placeholder="ingrese su e-mail...">
+          <div id="emailHelp" class="form-text">*** En breve te contactaremos ***</div>
+        </div>
+        <button type="submit" class="btn btn-secondary">Enviar</button> <button type="clean" class="btn btn-secondary">Borrar</button>
+      </form>
     </div>
     
     <footer class="piedepagina">
