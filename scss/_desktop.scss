@@ -1,0 +1,71 @@
+@media only screen and (min-width:1024px){
+    body{
+        background-color: #b0a295;
+        color: $rosaclaro;
+        font-size: 0.9rem;
+        align-items:center;
+        }
+        /*Contenedor Grid*/
+        .container {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 2.5fr 1fr;
+        grid-template-areas:
+        "encabezado encabezado"
+        "sector1 sector2"
+        "piedepagina piedepagina";
+        }
+        .encabezado { 
+        grid-area: encabezado;
+        text-align: center;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        }
+        .sector1 { 
+        grid-area: sector1; 
+        color: $rosaclaro;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        align-self: center;
+        }
+        .sector2 { 
+        grid-area: sector2;
+        color: $rosaclaro;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        align-self: center;
+        }
+        .piedepagina { 
+        grid-area: piedepagina; 
+        }
+
+    header{
+        background-image: url(../Images/FrutosSecos.jpg); background-repeat:    no-repeat; background-size: cover;
+        .logo{
+        width: 8rem;
+        border-radius: 50%;
+        margin: 0.2rem;}
+        ul li a:hover{font-weight: bold;}
+        }
+    main{
+        h5{font-size: 2rem;}
+        iframe{width:560px; height: 315px;}
+        form{
+        color:#201f1e;
+        background-color: #e0d4c4;    
+        padding: 20px;}}
+        .sinPunto{list-style: none;}            
+    footer{
+        background-color: #201f1e;
+        font-family: $fontText
+        p{padding: 0.5rem;}
+        .redes a i{
+        font-size: 25px;
+        padding: 5px 10px;
+            &:hover{
+            color: $rosaclaro;
+            transform: scale(1.5);
+            transition:all 1s ease;}}
+        }
+    }

@@ -1,162 +1,179 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;700&family=Roboto:wght@100;300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
-
-@media (max-width: 1023px) {
-  body {
-    background-color: lightslategray;
-    color: #fff; }
-  .sector1 {
-    grid-area: sector1;
-    height: fit-content;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    align-self: center; }
-  .sector2 {
-    grid-area: sector2;
-    height: fit-content;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    text-align: center;
-    align-self: center; }
-  .piedepagina {
-    grid-area: piedepagina;
-    max-width: 100%;
-    max-height: fit-content; }
-  /*comienza Header*/
-  header {
-    background-image: url(../Images/FrutosSecos.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; }
-  /*logo principal*/
-  .logo {
-    width: 8rem;
-    border-radius: 50%;
-    margin: 0.5rem; }
-  /*Nav*/
-  ul li a:hover {
-    font-weight: bold; }
-  /*comienza Main*/
-  /*caption carousel*/
-  h5 {
-    font-size: 2rem; }
-  /*video en Index*/
-  iframe {
-    max-width: 450px;
-    max-height: 300px; }
-  /*InfoContacto sinbullets*/
-  .sinpunto {
-    list-style: none; }
-  /*comienza Footer*/
-  footer {
-    background-color: #201f1e;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-  footer p {
-    padding: 0.5rem; }
-  .redes a i {
-    font-size: 25px;
-    padding: 5px 10px; }
-  .redes a i:hover {
-    color: #fff;
-    transform: scale(1.5);
-    transition: all 1s ease; } }
+  box-sizing: border-box;
+}
 
 @media only screen and (min-width: 1024px) {
   body {
     background-color: #b0a295;
-    color: #fff;
+    color: #f8e7f5;
     font-size: 0.9rem;
-    align-items: center; }
+    align-items: center;
+  }
   /*Contenedor Grid*/
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2.5fr 1fr;
-    grid-template-areas: "encabezado encabezado" "sector1 sector2" "piedepagina piedepagina"; }
+    grid-template-areas: "encabezado encabezado" "sector1 sector2" "piedepagina piedepagina";
+  }
   .encabezado {
     grid-area: encabezado;
     text-align: center;
     display: flex;
     justify-content: space-between;
-    align-items: center; }
+    align-items: center;
+  }
   .sector1 {
     grid-area: sector1;
-    color: #fff;
+    color: #f8e7f5;
     padding: 0.5rem 1rem;
     text-align: center;
-    align-self: center; }
+    align-self: center;
+  }
   .sector2 {
     grid-area: sector2;
-    color: #fff;
+    color: #f8e7f5;
     padding: 0.5rem 1rem;
     text-align: center;
-    align-self: center; }
+    align-self: center;
+  }
   .piedepagina {
-    grid-area: piedepagina; }
-  /*comienza Header*/
+    grid-area: piedepagina;
+  }
   header {
     background-image: url(../Images/FrutosSecos.jpg);
     background-repeat: no-repeat;
-    background-size: cover; }
-  /*logo principal*/
-  .logo {
+    background-size: cover;
+  }
+  header .logo {
     width: 8rem;
     border-radius: 50%;
-    margin: 0.2rem; }
-  /*Nav*/
-  ul li a:hover {
-    font-weight: bold; }
-  /*comienza Main*/
-  /*caption carousel*/
-  h5 {
-    font-size: 2rem; }
-  /*video en Index*/
-  iframe {
+    margin: 0.2rem;
+  }
+  header ul li a:hover {
+    font-weight: bold;
+  }
+  main h5 {
+    font-size: 2rem;
+  }
+  main iframe {
     width: 560px;
-    height: 315px; }
-  /*form en CONTACTO*/
-  form {
+    height: 315px;
+  }
+  main form {
     color: #201f1e;
     background-color: #e0d4c4;
-    padding: 20px; }
-  /*InfoContacto sinbullets*/
-  .sinpunto {
-    list-style: none; }
-  /*comienza Footer*/
+    padding: 20px;
+  }
+  .sinPunto {
+    list-style: none;
+  }
   footer {
     background-color: #201f1e;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-  footer p {
-    padding: 0.5rem; }
-  .redes a i {
+    font-family: 0.9rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif p;
+    font-family-padding: 0.5rem;
+  }
+  footer .redes a i {
     font-size: 25px;
-    padding: 5px 10px; }
-  .redes a i:hover {
-    color: #fff;
+    padding: 5px 10px;
+  }
+  footer .redes a i:hover {
+    color: #f8e7f5;
     transform: scale(1.5);
-    transition: all 1s ease; } }
-
-/*los llaman desde varias páginas*/
-.fontText {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 0.9rem;
-  color: #fff; }
-
+    transition: all 1s ease;
+  }
+}
+@media (max-width: 1023px) {
+  body {
+    background-color: lightslategray;
+    color: #f8e7f5;
+  }
+  .sector1 {
+    grid-area: sector1;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: #f8e7f5;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    align-self: center;
+  }
+  .sector2 {
+    grid-area: sector2;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    color: #f8e7f5;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    align-self: center;
+  }
+  .piedepagina {
+    grid-area: piedepagina;
+    max-width: 100%;
+    max-height: -webkit-fit-content;
+    max-height: -moz-fit-content;
+    max-height: fit-content;
+  }
+  header {
+    background-image: url(../Images/FrutosSecos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  header .logo {
+    width: 8rem;
+    border-radius: 50%;
+    margin: 0.5rem;
+  }
+  header ul li a:hover {
+    font-weight: bold;
+  }
+  main h5 {
+    font-size: 2rem;
+  }
+  main iframe {
+    max-width: 450px;
+    max-height: 300px;
+  }
+  .sinPunto {
+    list-style: none;
+  }
+  footer {
+    background-color: #201f1e;
+    font-family: 0.9rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  footer p {
+    padding: 0.5rem;
+  }
+  footer .redes a i {
+    font-size: 25px;
+    padding: 5px 10px;
+  }
+  footer .redes a i:hover {
+    color: #f8e7f5;
+    transform: scale(1.5);
+    transition: all 1s ease;
+  }
+}
 .left {
   text-align: left;
-  align-self: center; }
+  align-self: center;
+}
 
 .right {
   text-align: right;
-  align-self: center; }
+  align-self: center;
+}
 
 .center {
   text-align: center;
-  align-self: center; }
+  align-self: center;
+}
 
 .justify {
-  text-align: justify; }
+  text-align: justify;
+  align-self: center;
+}/*# sourceMappingURL=estilo.css.map */

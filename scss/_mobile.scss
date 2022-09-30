@@ -1,0 +1,54 @@
+@media (max-width:1023px){
+    body{
+        background-color: lightslategray;
+        color: $rosaclaro;
+        }
+        .sector1 { 
+        grid-area: sector1;
+        height: fit-content; 
+        color: $rosaclaro;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        align-self: center;
+        }
+        .sector2 { 
+        grid-area: sector2;
+        height: fit-content; 
+        color: $rosaclaro;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        align-self: center;
+        }
+        .piedepagina { 
+        grid-area: piedepagina;
+        max-width:100%;
+        max-height: fit-content;
+        }
+    header{
+        background-image: url(../Images/FrutosSecos.jpg); background-repeat: no-repeat; background-size: cover;
+        .logo{
+        width: 8rem;
+        border-radius: 50%;
+        margin: 0.5rem;}
+        ul li a:hover{
+        font-weight: bold;}
+        }
+    main{
+        h5{font-size: 2rem;} 
+        iframe{
+        max-width: 450px;
+        max-height: 300px;}}
+        .sinPunto{list-style: none;}
+    footer{
+        background-color: #201f1e;
+        font-family: $fontText;
+        p{padding: 0.5rem;}
+        .redes a i{
+        font-size: 25px;
+        padding: 5px 10px;
+        &:hover{
+        color: $rosaclaro;
+        transform: scale(1.5);
+        transition:all 1s ease;}}
+        }
+    }
