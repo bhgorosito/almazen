@@ -1,7 +1,7 @@
 @media only screen and (min-width:1024px){
     body{
         background-color: #b0a295;
-        color: $rosaclaro;
+        color: $colorText;
         font-size: 0.9rem;
         align-items:center;
         }
@@ -23,19 +23,11 @@
         align-items: center;
         }
         .sector1 { 
-        grid-area: sector1; 
-        color: $rosaclaro;
-        padding: 0.5rem 1rem;
-        text-align: center;
-        align-self: center;
-        }
+            @include sectores (sector1)
+            }
         .sector2 { 
-        grid-area: sector2;
-        color: $rosaclaro;
-        padding: 0.5rem 1rem;
-        text-align: center;
-        align-self: center;
-        }
+            @include sectores (sector2)
+            }
         .piedepagina { 
         grid-area: piedepagina; 
         }
@@ -57,14 +49,16 @@
         padding: 20px;}}
         .sinPunto{list-style: none;}            
     footer{
+        color: #ffffff;
         background-color: #201f1e;
-        font-family: $fontText
+        font-family: $fontText;
+        margin: 0.5rem;
         p{padding: 0.5rem;}
         .redes a i{
         font-size: 25px;
         padding: 5px 10px;
             &:hover{
-            color: $rosaclaro;
+            color: #ffffff;
             transform: scale(1.5);
             transition:all 1s ease;}}
         }

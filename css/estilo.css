@@ -8,7 +8,7 @@
 @media only screen and (min-width: 1024px) {
   body {
     background-color: #b0a295;
-    color: #f8e7f5;
+    color: #44403a;
     font-size: 0.9rem;
     align-items: center;
   }
@@ -27,15 +27,13 @@
     align-items: center;
   }
   .sector1 {
-    grid-area: sector1;
-    color: #f8e7f5;
+    color: #44403a;
     padding: 0.5rem 1rem;
     text-align: center;
     align-self: center;
   }
   .sector2 {
-    grid-area: sector2;
-    color: #f8e7f5;
+    color: #44403a;
     padding: 0.5rem 1rem;
     text-align: center;
     align-self: center;
@@ -72,16 +70,20 @@
     list-style: none;
   }
   footer {
+    color: #ffffff;
     background-color: #201f1e;
-    font-family: 0.9rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif p;
-    font-family-padding: 0.5rem;
+    font-family: 0.9rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.5rem;
+  }
+  footer p {
+    padding: 0.5rem;
   }
   footer .redes a i {
     font-size: 25px;
     padding: 5px 10px;
   }
   footer .redes a i:hover {
-    color: #f8e7f5;
+    color: #ffffff;
     transform: scale(1.5);
     transition: all 1s ease;
   }
@@ -89,24 +91,16 @@
 @media (max-width: 1023px) {
   body {
     background-color: lightslategray;
-    color: #f8e7f5;
+    color: #44403a;
   }
   .sector1 {
-    grid-area: sector1;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    color: #f8e7f5;
+    color: #44403a;
     padding: 0.5rem 1rem;
     text-align: center;
     align-self: center;
   }
   .sector2 {
-    grid-area: sector2;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    color: #f8e7f5;
+    color: #44403a;
     padding: 0.5rem 1rem;
     text-align: center;
     align-self: center;
@@ -142,8 +136,10 @@
     list-style: none;
   }
   footer {
+    color: #ffffff;
     background-color: #201f1e;
     font-family: 0.9rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0.5rem;
   }
   footer p {
     padding: 0.5rem;
@@ -153,7 +149,7 @@
     padding: 5px 10px;
   }
   footer .redes a i:hover {
-    color: #f8e7f5;
+    color: #ffffff;
     transform: scale(1.5);
     transition: all 1s ease;
   }

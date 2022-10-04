@@ -7,7 +7,14 @@
 }
 
 $fontText: 0.9rem 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$rosaclaro: #f8e7f5;
+$colorText: #44403a;
+
+@mixin sectores ($sectorgrid){
+    color: $colorText;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    align-self: center;
+}
 
 @import "desktop";
 @import "mobile";

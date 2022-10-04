@@ -1,24 +1,14 @@
 @media (max-width:1023px){
     body{
         background-color: lightslategray;
-        color: $rosaclaro;
+        color: $colorText;
         }
         .sector1 { 
-        grid-area: sector1;
-        height: fit-content; 
-        color: $rosaclaro;
-        padding: 0.5rem 1rem;
-        text-align: center;
-        align-self: center;
-        }
+            @include sectores (sector1)
+            }
         .sector2 { 
-        grid-area: sector2;
-        height: fit-content; 
-        color: $rosaclaro;
-        padding: 0.5rem 1rem;
-        text-align: center;
-        align-self: center;
-        }
+            @include sectores (sector2)
+            }
         .piedepagina { 
         grid-area: piedepagina;
         max-width:100%;
@@ -40,14 +30,16 @@
         max-height: 300px;}}
         .sinPunto{list-style: none;}
     footer{
+        color: #ffffff;
         background-color: #201f1e;
         font-family: $fontText;
+        margin: 0.5rem;
         p{padding: 0.5rem;}
         .redes a i{
         font-size: 25px;
         padding: 5px 10px;
         &:hover{
-        color: $rosaclaro;
+        color: #ffffff;
         transform: scale(1.5);
         transition:all 1s ease;}}
         }
